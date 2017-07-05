@@ -90,7 +90,14 @@ describe('Vehicle') do
     it "returns the engine size for the vehicle" do
       test_vehicle = vehicle.new("Toyota", "Prius", 2000, "blue", "4l", "4")
       expect(test_vehicle.engine_size).to(eq("4l"))
-
     end
   end
+
+  describe("#number_of_doors") do
+    it "returns the number of doors" do
+      test_vehicle = vehicle.new("Toyota", "Prius", 2000, "blue", "4l", "4")
+      expect(test_vehicle.number_of_doors).to(eq("4"))
+    end
+  end
+
 end
